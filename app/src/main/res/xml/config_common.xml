@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8"?>
+<configs>
+    <!--应用服务器-->
+	<config key="server.api.root" value="http://10.155.50.1:8080/uda100"/>
+	<!--资源服务器-->
+	<config key="server.resource.root" value="${server.api.root}"/>
+
+	<config key="api.infoupload.url" value="${server.api.root}/api/device_info/upload"/>
+
+	<config key="api.ownerinfo.get.url" value="${server.api.root}/api/device_info/owner_info/app_device_id/{app_device_id}"/>
+
+	<config key="api.checkupdate.url" value="${server.api.root}/api/sys/check_update"/>
+
+	<config key="api.appdeviceid.get.url" value="${server.api.root}/api/device_info/get_app_device_id" />
+
+	<!-- database -->
+	<config key="db.uda.name" value="data.db"/>
+	<config key="db.uda.version" value="1"/>
+
+	<!-- app keys -->
+	<config key="appkey.umeng.analytics" value="56b8af2667e58e1d05001ddd" />
+
+	<!-- url -->
+	<config key="url.webhome" value="${server.api.root}" />
+
+</configs>

@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="utf-8"?>
+<configs>
+    <config key="server.api.root" value="http://10.155.38.142/uda"/>
+</configs>

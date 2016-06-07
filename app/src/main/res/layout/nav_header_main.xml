@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+	xmlns:tools="http://schemas.android.com/tools"
+	android:layout_width="match_parent"
+	android:layout_height="wrap_content"
+	android:orientation="vertical"
+	android:gravity="bottom"
+	android:paddingTop="?attr/actionBarSize"
+	tools:context=".ui.activity.MainActivity">
+
+	<ImageView
+		android:id="@android:id/icon"
+		android:layout_width="wrap_content"
+		android:layout_height="wrap_content"
+		android:layout_marginBottom="@dimen/activity_horizontal_margin"
+		android:layout_marginLeft="@dimen/activity_horizontal_margin"
+		android:src="@mipmap/ic_launcher" />
+
+	<LinearLayout
+		android:layout_width="wrap_content"
+		android:layout_height="wrap_content"
+		android:layout_marginLeft="@dimen/activity_horizontal_margin">
+		<TextView
+			android:id="@+id/app_name"
+			android:layout_width="wrap_content"
+			android:layout_height="wrap_content"
+			android:text="@string/app_name"
+			android:textAppearance="@style/TextAppearance.AppCompat.Large" />
+
+		<TextView
+			android:id="@+id/app_version"
+			android:layout_width="wrap_content"
+			android:layout_height="wrap_content"
+			android:layout_marginLeft="4dp"
+			android:textAppearance="@style/TextAppearance.AppCompat.Small" />
+
+	</LinearLayout>
+
+	<TextView
+		android:layout_width="wrap_content"
+		android:layout_height="wrap_content"
+		android:layout_marginTop="4dp"
+		android:layout_marginLeft="@dimen/activity_horizontal_margin"
+		android:textAppearance="@style/TextAppearance.AppCompat.Subhead"
+		android:text="@string/eng_name" />
+
+	<View style="@style/HorizontalLine.Dark" android:layout_marginTop="@dimen/activity_horizontal_margin"/>
+
+</LinearLayout>
